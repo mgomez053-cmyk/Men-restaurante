@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realiza tu pedido</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar dark">
+    <a class="brand" href="index.html">🍽 Restaurante Delicioso</a>
+    <div class="nav-links show">
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="section form-section">
+    <h1>Realiza tu pedido</h1>
+    <p class="subtitle">Llena el formulario y confirma tu orden.</p>
+
+    <form id="pedidoForm" class="form-card">
+      <label>Nombre</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
+
+      <label>Platillo</label>
+      <select id="platillo" required>
+        <option value="">Selecciona una opción</option>
+        <option>Tacos de arrachera</option>
+        <option>Pollo a la brasa</option>
+        <option>Enchiladas verdes</option>
+        <option>Ensalada César</option>
+      </select>
+
+      <label>Bebida</label>
+      <select id="bebida">
+        <option>Agua fresca</option>
+        <option>Mojito sin alcohol</option>
+        <option>Refresco</option>
+      </select>
+
+      <label>Comentarios</label>
+      <textarea id="comentarios" rows="4" placeholder="Ejemplo: sin cebolla, extra salsa..."></textarea>
+
+      <button class="btn" type="submit">Enviar pedido</button>
+    </form>
+
+    <div id="resultadoPedido" class="resultado"></div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

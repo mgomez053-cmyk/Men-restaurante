@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Delicioso | Menú</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <a class="brand" href="index.html">🍽 Restaurante Delicioso</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#menu">Menú</a>
+        <a href="#promos">Promos</a>
+        <a href="pedido.html">Pedido</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="logo-circle">🍴</div>
+      <h1>Menú Restaurante Delicioso</h1>
+      <p>Comida mexicana, bebidas y postres para disfrutar.</p>
+      <a class="btn" href="#menu">Ver menú</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu" class="section">
+      <h2>Nuestro menú</h2>
+      <p class="subtitle">Elige tus favoritos</p>
+
+      <div class="filters">
+        <button class="filter active" data-category="todos">Todo</button>
+        <button class="filter" data-category="entradas">Entradas</button>
+        <button class="filter" data-category="fuertes">Platos fuertes</button>
+        <button class="filter" data-category="postres">Postres</button>
+        <button class="filter" data-category="bebidas">Bebidas</button>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-category="entradas">
+          <div class="food-img">🥗</div>
+          <h3>Ensalada César</h3>
+          <p>Lechuga, queso parmesano, crotones y aderezo especial.</p>
+          <span>$120 MXN</span>
+        </article>
+
+        <article class="card" data-category="entradas">
+          <div class="food-img">🍲</div>
+          <h3>Sopa del día</h3>
+          <p>Sopa casera preparada con ingredientes frescos.</p>
+          <span>$95 MXN</span>
+        </article>
+
+        <article class="card" data-category="fuertes">
+          <div class="food-img">🌮</div>
+          <h3>Tacos de arrachera</h3>
+          <p>Tres tacos con salsa, cebolla, cilantro y limón.</p>
+          <span>$180 MXN</span>
+        </article>
+
+        <article class="card" data-category="fuertes">
+          <div class="food-img">🍗</div>
+          <h3>Pollo a la brasa</h3>
+          <p>Pollo jugoso con papas doradas y ensalada.</p>
+          <span>$195 MXN</span>
+        </article>
+
+        <article class="card" data-category="fuertes">
+          <div class="food-img">🫔</div>
+          <h3>Enchiladas verdes</h3>
+          <p>Rellenas de pollo, crema, queso y salsa verde.</p>
+          <span>$160 MXN</span>
+        </article>
+
+        <article class="card" data-category="postres">
+          <div class="food-img">🍰</div>
+          <h3>Pastel de queso</h3>
+          <p>Postre cremoso con frutos rojos.</p>
+          <span>$85 MXN</span>
+        </article>
+
+        <article class="card" data-category="postres">
+          <div class="food-img">🍨</div>
+          <h3>Helado artesanal</h3>
+          <p>Sabores de vainilla, chocolate y fresa.</p>
+          <span>$70 MXN</span>
+        </article>
+
+        <article class="card" data-category="bebidas">
+          <div class="food-img">🥤</div>
+          <h3>Agua fresca</h3>
+          <p>Jamaica, horchata o limón con chía.</p>
+          <span>$45 MXN</span>
+        </article>
+
+        <article class="card" data-category="bebidas">
+          <div class="food-img">🍹</div>
+          <h3>Mojito sin alcohol</h3>
+          <p>Refrescante bebida con limón, menta y soda.</p>
+          <span>$75 MXN</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="promos" class="promo">
+      <h2>Promoción del día</h2>
+      <p>Ordena un plato fuerte y recibe una bebida gratis.</p>
+      <button class="btn" id="promoBtn">Cambiar promoción</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>📍 Calle Gourmet 123, Ciudad Sabor</p>
+    <p>📞 55 1234 5678 | ✉ contacto@restaurantedelicioso.com</p>
+    <p>© 2026 Restaurante Delicioso</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
